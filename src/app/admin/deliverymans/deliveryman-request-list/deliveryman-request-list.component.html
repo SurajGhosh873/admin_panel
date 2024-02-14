@@ -1,0 +1,196 @@
+<section>
+  <div class="row justify-content-start align-items-center">
+    <div class="col-12 col-sm-12 col-md-12 col-lg-12 col-xl-12 col-xxl-12">
+      <div class="card">
+        <div class="card-header">
+          <div class="row justify-content-start align-items-center">
+            <div
+              class="col-4 col-xs-4 col-sm-4 col-md-6 col-lg-3 col-xl-4 col-xxl-5"
+            >
+              <span class="page-title"> Deliveryman Request List </span>
+              <span class="badge badge-dark custom-badge-count"> 5 </span>
+            </div>
+            <div
+              class="col-8 col-xs-8 col-sm-8 col-md-6 col-lg-5 col-xl-5 col-xxl-4"
+            >
+              <div
+                class="row height d-flex justify-content-center align-items-center"
+              >
+                <div class="col-12">
+                  <div class="search">
+                    <i class="fa fa-search"></i>
+                    <input
+                      type="text"
+                      class="form-control"
+                      placeholder="Search Here"
+                    />
+                    <button class="btn btn-primary">Search</button>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div
+              class="col-12 col-xs-12 col-sm-12 col-md-12 col-lg-4 col-xl-3 col-xxl-3 mt-2 mt-lg-0"
+            >
+              <div
+                class="row height d-flex justify-content-end align-items-center"
+              >
+                <div
+                  class="col-12 col-xs-12 col-sm-12 col-md-12 col-lg-12 col-xl-12 col-xxl-12 text-end"
+                >
+                  <div class="dropdown d-flex flex-row justify-content-end">
+                    <button
+                      class="btn btn-secondary btn-sm dropdown-toggle btn-report-color"
+                      type="button"
+                      id="dropdownMenuButton"
+                      data-toggle="dropdown"
+                      aria-haspopup="true"
+                      aria-expanded="false"
+                    >
+                      <span class="mx-2"
+                        ><i class="fa fa-download fa-icon-size"></i></span
+                      >Export Report
+                    </button>
+                    <div
+                      class="dropdown-menu"
+                      aria-labelledby="dropdownMenuButton"
+                    >
+                      <span class="dropdown-item-title">Download Options</span>
+                      <a><hr class="mt-2 mb-0" /></a>
+                      <a class="dropdown-item"
+                        ><span
+                          ><img
+                            class="report-icon mx-1"
+                            src="./../../../assets/icons/xls-file.png"
+                            alt="Excel Report"
+                        /></span>
+                        Excel</a
+                      >
+                      <a class="dropdown-item"
+                        ><span
+                          ><img
+                            class="report-icon mx-1"
+                            src="./../../../assets/icons/csv-file.png"
+                            alt="Csv Report"
+                        /></span>
+                        .Csv</a
+                      >
+                    </div>
+                    <!-- <button
+                      type="button"
+                      class="btn btn-primary btn-sm btn-custom btn-size-100"
+                    >
+                      Add
+                    </button> -->
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="card-body">
+          <div class="row justify-cont-center align-items-center mt-2 mb-3">
+            <div
+              class="col-12 col-xs-12 col-md-12 col-lg-12 col-xl-12 col-xxl-12 mb-2"
+            >
+              <div class="table-responsive">
+                <table class="table table-hover">
+                  <thead class="thead-custom-color">
+                    <tr>
+                      <th scope="col" style="width: 6%; text-align: center;">
+                        Sl
+                      </th>
+                      <th scope="col" style="width: 20%;">Name</th>
+                      <th scope="col" style="width: 12%; text-align: start;">
+                        Contact No.
+                      </th>
+                      <th scope="col" style="width: 15%; text-align: start;">
+                        Zone
+                      </th>
+
+                      <th scope="col" style="width: 10%; text-align: center;">
+                         Status
+                      </th>
+                      <th scope="col" style="width: 10%; text-align: center;">
+                        Action
+                      </th>
+                    </tr>
+                  </thead>
+                  <tbody>
+                    <tr>
+                      <th scope="row" style="text-align: center;">1</th>
+                      <td>
+                        <div class="d-flex flex-row">
+                          <span class="mx-2">
+                            <img class="table-d-image" src="./assets/dashboard-icons/man.png" alt="">
+                          </span>
+                          <div class="d-flex flex-column">
+                            <span>Smith </span>
+                            <span><i class="fa-solid fa-star fa-icon-size"></i> 5</span>
+                          </div>
+
+                        </div>
+                      </td>
+                      <td style="text-align: start;">+91 87******43</td>
+                      <td style="text-align: start;">North</td>
+
+
+                      <td style="text-align: center;">
+                        <span class="text-warning">Pending</span>
+                      </td>
+
+                      <td style="text-align: center;">
+                        <div>
+                          <select class="form-control form-control-sm">
+                            <option class="text-center" >Accept</option>
+                            <option class="text-center">Reject</option>
+                            <!-- <option>Low</option> -->
+                          </select>
+                        </div>
+                      </td>
+                    </tr>
+                    <tr>
+                      <th scope="row" style="text-align: center;">1</th>
+                      <td>
+                        <div class="d-flex flex-row">
+                          <span class="mx-2">
+                            <img class="table-d-image" src="./assets/dashboard-icons/woman.png" alt="">
+                          </span>
+                          <div class="d-flex flex-column">
+                            <span>John Doe</span>
+                            <span><i class="fa-solid fa-star fa-icon-size"></i> 5</span>
+                          </div>
+
+                        </div>
+                      </td>
+                      <td style="text-align: start;">+91 87******43</td>
+                      <td style="text-align: start;">North</td>
+
+
+                      <td style="text-align: center;">
+                        <span class="text-danger">Denied</span>
+                      </td>
+
+                      <td style="text-align: center;">
+                        <div>
+                          <select class="form-control form-control-sm">
+                            <option class="text-center">Accept</option>
+                            <option class="text-center">Reject</option>
+                            <!-- <option>Low</option> -->
+                          </select>
+                        </div>
+                      </td>
+                    </tr>
+                  </tbody>
+                </table>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+
+

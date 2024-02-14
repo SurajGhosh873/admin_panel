@@ -1,2 +1,355 @@
 // Here you can add other styles
 
+// Here you can add other styles
+
+// DASHBOARD
+
+.card-shadow {
+  border-radius: 6px !important;
+  box-shadow: rgba(0, 0, 0, 0.1) 0px 4px 12px;
+}
+
+img.counter-images {
+  width: 40px !important;
+  height: 40px !important;
+}
+
+.dashboard-items-box,
+.dashboard-orders-box,
+.dashboard-stores-box,
+.dashboard-customers-box {
+  text-align: center !important;
+  padding: 1.25rem !important;
+}
+
+.box-1 > .count {
+  font-weight: 600 !important;
+}
+
+.order--card {
+  background: rgba(110, 137, 175, 0.0509803922);
+  border-radius: 10px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  padding: 18px 15px 15px 20px;
+  min-height: 65px;
+}
+
+a.order--card {
+  text-decoration: none;
+  color: gray;
+}
+
+.order-icons {
+  width: 25px !important;
+  height: 25px !important;
+}
+
+.go-to-view-all {
+  text-decoration: none !important;
+}
+.heart-size {
+  width: 25px !important;
+}
+
+.counter-red {
+  color: #fc4f4f !important;
+  font-weight: 600;
+}
+.counter-black {
+  color: #2a2a2a !important;
+  font-weight: 600;
+}
+.counter-success {
+  color: #3399ff !important;
+  font-weight: 600;
+}
+
+.image-container {
+  width: 40px;
+  height: 40px;
+  background: rgb(247, 247, 247);
+  // border: 1px solid gray;
+  box-shadow: rgba(0, 0, 0, 0.16) 0px 1px 4px;
+  border-radius: 5px !important;
+  text-align: center;
+}
+.user-icons {
+  width: 40px !important;
+  height: 40px !important;
+}
+.deliveryman-name {
+  // font-size: 12px !important;
+  color: rgb(62, 62, 62) !important;
+}
+.deliveryman-contact {
+  font-size: 12px !important;
+  color: gray !important;
+}
+.image-container-user {
+  margin-right: 8px !important;
+}
+.alert-custom {
+  padding: 0.2rem 1.2rem !important;
+  // background: rgb(209, 209, 209) !important;
+  border: none !important;
+  margin-bottom: 0 !important;
+}
+.top-items {
+  margin-left: 10px !important;
+}
+.top-items-icons {
+  width: 36px !important;
+  height: 36px !important;
+}
+
+// ============================================ global search
+
+.search {
+  position: relative;
+  box-shadow: 0 0 40px rgba(51, 51, 51, 0.1);
+}
+
+.search input {
+  height: 40px;
+  text-indent: 25px;
+  border: 2px solid #d6d4d4;
+}
+
+.search input:focus {
+  box-shadow: none;
+  border: 1px solid blue;
+}
+
+.search .fa-search {
+  position: absolute;
+  top: 13px;
+  left: 16px;
+}
+
+.search button {
+  position: absolute;
+  top: 5px;
+  right: 5px;
+  height: 30px;
+  //  width: 110px;
+  background: blue;
+  padding: 2px 10px;
+}
+
+.page-title {
+  font-size: 20px !important;
+  font-weight: 600;
+}
+
+//================================================== LIST COUNT TITLE
+.custom-badge-count {
+  background-color: #adadad;
+  color: white;
+  font-size: 15px !important;
+}
+
+.btn-report-color {
+  color: white !important;
+}
+
+span.dropdown-item-title {
+  padding: 4px 10px !important;
+  color: #555555;
+  font-weight: 600;
+}
+
+img.report-icon {
+  width: 20px !important;
+}
+
+// ========================== button
+.btn-action {
+  margin: 0px 6px !important;
+  width: 35px !important;
+  height: 35px !important;
+  padding: 4px !important;
+}
+
+.btn-action:hover {
+  color: white !important;
+}
+
+.btn-text-white {
+  color: white !important;
+}
+
+.btn-custom {
+  padding: 6px !important;
+  margin: 0px 0px 0px 10px !important;
+}
+.btn-size-50 {
+  width: 50px !important;
+}
+.btn-size-70 {
+  width: 70px !important;
+}
+.btn-size-100 {
+  width: 100px !important;
+}
+.btn-size-120 {
+  width: 120px !important;
+}
+.btn-size-150 {
+  width: 150px !important;
+}
+.btn-size-180 {
+  width: 180px !important;
+}
+.btn-size-200 {
+  width: 200px !important;
+}
+.btn-size-230 {
+  width: 230px !important;
+}
+
+// ======================= Table
+.table {
+  width: 100% !important;
+  // border: 2px solid gray !important;
+}
+th,
+td {
+  vertical-align: middle !important;
+}
+
+.thead-custom-color {
+  background-color: #2a2a2a !important;
+  color: white !important;
+}
+
+//====================== ICONS
+
+.fa-icon-size {
+  font-size: 14px !important;
+}
+
+//================= Section
+
+section {
+  margin: 10px 0px !important;
+}
+
+//====================== INPUT
+
+.label-title {
+  font-size: 16px !important;
+  font-weight: 600 !important;
+  color: #5d5d5d !important;
+}
+
+.error-text {
+  color: red !important;
+  font-weight: 600 !important;
+}
+
+.form-group {
+  margin-bottom: 0rem !important;
+}
+
+// ========= IMAGE
+.img-ratio-area {
+  // aspect-ratio: 3;
+  width: 100%;
+  // max-width: 400px;
+  -o-object-fit: cover;
+  object-fit: cover;
+  border: 1px solid #f4f4f4;
+  border-radius: 10px;
+}
+.img-ratio-3to1 {
+  aspect-ratio: 3;
+  width: 100%;
+  max-width: 400px;
+  -o-object-fit: cover;
+  object-fit: cover;
+  border: 1px solid #f4f4f4;
+  border-radius: 10px;
+}
+
+.aspect-4-1 {
+  aspect-ratio: 4/1;
+}
+
+.aspect-235-375 {
+  aspect-ratio: 235/375;
+}
+
+.__upload-img {
+  border-radius: 10px;
+  border: 2px dashed #e5e5e5;
+  max-height: 249px;
+  max-width: 100%;
+  display: flex !important;
+}
+
+.__upload-img .img {
+  width: 100%;
+  height: 100%;
+  margin-inline: auto;
+  overflow: hidden;
+}
+.position-relative {
+  position: relative !important;
+}
+
+span.remove-image-button.aspect-4-1 {
+  position: absolute;
+  top: 5%;
+  right: 1.5%;
+}
+span.remove-image-button.aspect-235-375 {
+  position: absolute;
+  top: 2%;
+  right: 3%;
+}
+
+// .remove_image_button {
+//   position: absolute;
+//   right: 20px;
+//   top: 20px;
+//   cursor: pointer;
+//   width: 35px;
+//   height: 35px;
+//   display: flex;
+//   align-items: center;
+//   justify-content: center;
+//   color: red;
+//   font-size: 22px;
+// }
+
+.image-container-height {
+  height: 240px;
+}
+
+.fa-close-icon {
+  font-size: 24px;
+  color: red;
+}
+
+.alert-mb-0-px-2 {
+  margin-bottom: 0px !important;
+  padding: 0px 20px !important;
+}
+.alert-100 {
+  width: 100px !important;
+}
+
+.btn-circle-20 {
+  width: 30px !important;
+  height: 30px !important;
+  border-radius: 50% !important;
+  color: white !important;
+  font-weight: 600;
+  margin: 0px 3px !important;
+}
+
+.f-600 {
+  font-weight: 600 !important;
+}
