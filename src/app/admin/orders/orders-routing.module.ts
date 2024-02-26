@@ -2,6 +2,7 @@ import { NgModule } from '@angular/core';
 import { RouterModule, Routes } from '@angular/router';
 import { OrderListComponent } from './order-list/order-list.component';
 import { OrderDetailsComponent } from './order-details/order-details.component';
+import { RefundRequestListComponent } from './refund-request-list/refund-request-list.component';
 
 const routes: Routes = [
   {
@@ -44,13 +45,14 @@ const routes: Routes = [
     path: 'refunded-order-list',
     component: OrderListComponent
   },
-  {
-    path: 'offline-order-list',
-    component: OrderListComponent
-  },
+
   {
     path: 'order-details',
     component: OrderDetailsComponent
+  },
+  {
+    path: 'order-refund-requests',
+    component: RefundRequestListComponent
   }
 ];
 

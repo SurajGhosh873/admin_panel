@@ -7,7 +7,7 @@
             <div
               class="col-4 col-xs-4 col-sm-4 col-md-6 col-lg-3 col-xl-4 col-xxl-5"
             >
-              <span class="page-title"> Deliveryman Request List </span>
+              <span class="page-title"> Attribute List </span>
               <span class="badge badge-dark custom-badge-count"> 5 </span>
             </div>
             <div
@@ -76,12 +76,12 @@
                         .Csv</a
                       >
                     </div>
-                    <!-- <button
+                    <button
                       type="button"
-                      class="btn btn-primary btn-sm btn-custom btn-size-100"
+                      class="btn btn-primary btn-sm btn-custom btn-size-100" (click)="openModalForAddAttribute(addEditAttribute)"
                     >
                       Add
-                    </button> -->
+                    </button>
                   </div>
                 </div>
               </div>
@@ -100,18 +100,10 @@
                       <th scope="col" style="width: 6%; text-align: center;">
                         Sl
                       </th>
-                      <th scope="col" style="width: 20%;">Name</th>
-                      <th scope="col" style="width: 12%; text-align: start;">
-                        Contact No.
-                      </th>
-                      <th scope="col" style="width: 15%; text-align: start;">
-                        Zone
-                      </th>
+                      <th scope="col" style="width: 60%;">Name</th>
+                      <th scope="col" style="width: 10%;text-align: center;">status</th>
 
-                      <th scope="col" style="width: 10%; text-align: center;">
-                         Status
-                      </th>
-                      <th scope="col" style="width: 10%; text-align: center;">
+                      <th scope="col" style="width: 15%; text-align: center;">
                         Action
                       </th>
                     </tr>
@@ -119,65 +111,27 @@
                   <tbody>
                     <tr>
                       <th scope="row" style="text-align: center;">1</th>
-                      <td>
-                        <div class="d-flex flex-row align-items-center">
-                          <span class="mx-2">
-                            <img class="table-d-image" src="./assets/dashboard-icons/man.png" alt="">
-                          </span>
-                          <div class="d-flex flex-column ">
-                            <span>Smith </span>
-                            <!-- <span><i class="fa-solid fa-star fa-icon-size"></i> 5</span> -->
-                          </div>
-
+                      <td style="text-align: start;">Length</td>
+                      <td style="text-align: center;">
+                        <div class="switch">
+                          <input
+                            id="status-1"
+                            type="checkbox"
+                            class="switch-input"
+                          />
+                          <label for="status-1" class="switch-label m-0"
+                            >Switch</label
+                          >
                         </div>
                       </td>
-                      <td style="text-align: start;">+91 87******43</td>
-                      <td style="text-align: start;">North</td>
-
-
-                      <td style="text-align: center;">
-                        <span class="text-warning">Pending</span>
-                      </td>
-
                       <td style="text-align: center;">
                         <div>
-                          <select class="form-control form-control-sm">
-                            <option class="text-center" >Accept</option>
-                            <option class="text-center">Reject</option>
-                            <!-- <option>Low</option> -->
-                          </select>
-                        </div>
-                      </td>
-                    </tr>
-                    <tr>
-                      <th scope="row" style="text-align: center;">1</th>
-                      <td>
-                        <div class="d-flex flex-row align-items-center">
-                          <span class="mx-2">
-                            <img class="table-d-image" src="./assets/dashboard-icons/woman.png" alt="">
-                          </span>
-                          <div class="d-flex flex-column">
-                            <span>John Doe</span>
-                            <!-- <span><i class="fa-solid fa-star fa-icon-size"></i> 5</span> -->
-                          </div>
-
-                        </div>
-                      </td>
-                      <td style="text-align: start;">+91 87******43</td>
-                      <td style="text-align: start;">North</td>
-
-
-                      <td style="text-align: center;">
-                        <span class="text-danger">Reject</span>
-                      </td>
-
-                      <td style="text-align: center;">
-                        <div>
-                          <select class="form-control form-control-sm">
-                            <option class="text-center">Accept</option>
-                            <option class="text-center">Reject</option>
-                            <!-- <option>Low</option> -->
-                          </select>
+                          <a class="btn btn-outline-primary btn-action" (click)="openModalForAddAttribute(addEditAttribute)">
+                            <i class="fa-solid fa-pencil fa-icon-size"></i>
+                          </a>
+                          <a class="btn btn-outline-danger btn-action">
+                            <i class="fa-solid fa-trash-can fa-icon-size"></i>
+                          </a>
                         </div>
                       </td>
                     </tr>
@@ -192,5 +146,41 @@
   </div>
 </section>
 
+
+<ng-template #addEditAttribute>
+  <div class="modal-content">
+    <div class="modal-header">
+      <h5 class="modal-title">Modal title</h5>
+      <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close" (click)="closeModel()"></button>
+    </div>
+    <div class="modal-body">
+      <div class="row">
+        <div class="col-12 col-sm-12 col-md-12 col-lg-12 col-xl-12 col-xxl-12">
+          <div class="label-input-group">
+            <div class="form-group">
+              <label for="title" class="label-title"
+                >Unit Name</label
+              >
+              <input
+                type="text"
+                class="form-control form-control-md"
+                placeholder="Unit Name"
+              />
+              <div class="d-flex flex-row error-box">
+                <span class="error-text pl-2">
+                  <small>Please enter the required field.</small>
+                </span>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="modal-footer">
+      <button type="button" class="btn btn-danger text-white" data-bs-dismiss="modal" (click)="closeModel()">Close</button>
+      <button type="button" class="btn btn-primary">Save </button>
+    </div>
+  </div>
+</ng-template>
 
 

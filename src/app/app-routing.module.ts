@@ -42,6 +42,11 @@ const routes: Routes = [
           import('./admin/deliverymans/deliverymans.module').then((m) => m.DeliverymansModule),
       },
       {
+        path: 'admin',
+        loadChildren: () =>
+          import('./admin/products/products.module').then((m) => m.ProductsModule),
+      },
+      {
         path: 'dashboard',
         loadChildren: () =>
           import('./views/dashboard/dashboard.module').then(

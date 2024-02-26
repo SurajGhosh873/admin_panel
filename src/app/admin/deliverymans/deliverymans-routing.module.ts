@@ -4,6 +4,7 @@ import { NgModule } from '@angular/core';
 import { RouterModule, Routes } from '@angular/router';
 import { AddDeliverymanComponent } from './add-deliveryman/add-deliveryman.component';
 import { DeliverymanRequestListComponent } from './deliveryman-request-list/deliveryman-request-list.component';
+import { ReviewListComponent } from './review-list/review-list.component';
 
 const routes: Routes = [
   {
@@ -24,7 +25,7 @@ const routes: Routes = [
   },
   {
     path: 'review-list',
-    component: VehicleCategoryComponent
+    component: ReviewListComponent
   }
 ];
 

@@ -74,10 +74,10 @@ export const navItems: INavData[] = [
         name: 'Refunded',
         url: '/admin/refunded-order-list',
       },
-      {
-        name: 'Offline Payments',
-        url: '/admin/offline-order-list',
-      },
+      // {
+      //   name: 'Offline Payments',
+      //   url: '/admin/offline-order-list',
+      // },
     ],
   },
   {
@@ -87,7 +87,7 @@ export const navItems: INavData[] = [
     children: [
       {
         name: 'Refund Requests',
-        url: '/base/accordion',
+        url: '/admin/order-refund-requests',
       },
     ],
   },
@@ -116,7 +116,7 @@ export const navItems: INavData[] = [
   //   ],
   // },
   {
-    name: 'Banners',
+    name: 'Banners ',
     url: '/inv',
     iconComponent: { name: 'cil-puzzle' },
     children: [
@@ -125,7 +125,7 @@ export const navItems: INavData[] = [
         url: '/admin/add-banner',
       },
       {
-        name: 'Banner List',
+        name: 'Banners',
         url: '/admin/banner-list',
       },
     ],
@@ -146,10 +146,10 @@ export const navItems: INavData[] = [
     ],
   },
 
-  // {
-  //   name: 'Product Management',
-  //   title: true,
-  // },
+  {
+    name: 'Product Management',
+    title: true,
+  },
   // {
   //   name: 'Categories',
   //   url: '/inv',
@@ -173,29 +173,37 @@ export const navItems: INavData[] = [
   //     },
   //   ],
   // },
-  // {
-  //   name: 'Attributes',
-  //   url: '/theme/colors',
-  //   iconComponent: { name: 'cil-drop' },
-  // },
-  // {
-  //   name: 'Units',
-  //   url: '/theme/colors',
-  //   iconComponent: { name: 'cil-drop' },
-  // },
-  // {
-  //   name: 'Product Setup',
-  //   url: '/inv',
-  //   iconComponent: { name: 'cil-puzzle' },
-  //   children: [
-  //     {
-  //       name: 'Add New ',
-  //       url: '/base/accordion',
-  //     },
-  //     {
-  //       name: 'List',
-  //       url: '/base/accordion',
-  //     },
+  {
+    name: 'Attributes',
+    url: '/admin/attribute-list',
+    iconComponent: { name: 'cil-drop' },
+  },
+  {
+    name: 'Units',
+    url: '/admin/unit-list',
+    iconComponent: { name: 'cil-drop' },
+  },
+  {
+    name: 'Product Setup',
+    url: '/inv',
+    iconComponent: { name: 'cil-puzzle' },
+    children: [
+      {
+        name: 'Add Product',
+        url: '/admin/add-product',
+      },
+      {
+        name: 'Products',
+        url: '/admin/product-list',
+      },
+      {
+        name: 'Products Gallery',
+        url: '/admin/product-gallery',
+      },
+      {
+        name: 'Products Request',
+        url: '/admin/product-request-list',
+      },
   //     {
   //       name: 'Product Gallery',
   //       url: '/base/accordion',
@@ -216,11 +224,11 @@ export const navItems: INavData[] = [
   //       name: 'Bulk Export',
   //       url: '/base/accordion',
   //     },
-  //   ],
-  // },
+    ],
+  },
 
   {
-    name: 'Order Management',
+    name: 'Delivery Management',
     title: true,
   },
 
@@ -251,6 +259,21 @@ export const navItems: INavData[] = [
   {
     name: 'Reviews',
     url: '/admin/review-list',
+    iconComponent: { name: 'cil-puzzle' },
+  },
+
+  {
+    name: 'Settings',
+    title: true,
+  },
+  {
+    name: 'User Type',
+    url: '/admin/user-type-list',
+    iconComponent: { name: 'cil-puzzle' },
+  },
+  {
+    name: 'User Type Access',
+    url: '/admin/user-type-access',
     iconComponent: { name: 'cil-puzzle' },
   },
 
